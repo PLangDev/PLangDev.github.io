@@ -1,82 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <title>Meine Seite</title>
-  <style>
-    /* --- Grunddesign --- */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background-image: url("background1.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed; /* bleibt beim Scrollen stehen */
-    }
+  <link rel="stylesheet" href="styles.css">
 
-    /* --- Überschrift auf dem Hintergrund --- */
-    .hero {
-      height: 100vh; /* ganze Bildschirmhöhe */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .hero h1 {
-      background: rgba(0,0,0,0.5);
-      padding: 20px 40px;
-      border-radius: 10px;
-    }
-
-    /* --- Abschnitt mit Videos --- */
-    .content {
-      background: rgba(0,0,0,0.6);
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .content h2 {
-      margin-bottom: 40px;
-      font-size: 28px;
-    }
-
-    .video-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-
-    .video-item {
-      flex: 1 1 45%;
-      min-width: 300px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border-radius: 10px;
-      border: none;
-    }
-
-    .video-text {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #ccc;
-    }
-
-    /* --- Damit man weiter runter scrollen kann --- */
-    footer {
-      background: rgba(0,0,0,0.8);
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
 </head>
+
 <body>
 
   <!-- Startseite mit großem Hintergrund -->
@@ -101,9 +32,12 @@
     </div>
   </div>
 
+  <a class="impressumLink" href="impressum.html">Impressum</a>
+
   <footer>
     © 2025 – Deine Portfolio-Seite. Erstellt mit ❤️ und GitHub Pages.
   </footer>
 
 </body>
+
 </html>
