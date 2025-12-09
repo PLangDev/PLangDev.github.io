@@ -86,11 +86,30 @@ body {
   text-align: center;
 }
 
-.hero h1 {
+/* Box, die Titel + Untertitel enthält */
+.hero-box {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px 40px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Titel im Hero */
+.hero h1 {
+  margin: 0;
+}
+
+/* Untertitel im Hero */
+.hero-subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #ddd;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
 
 /* ======================= */
 /*     CONTENT / SECTIONS  */
@@ -197,6 +216,13 @@ footer {
   color: #aaa;
 }
 
+/* Footer bleibt sichtbar auf der Home */
+body.home footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /* ======================= */
 /*   HOME PAGE NO SCROLL   */
 /* ======================= */
@@ -204,11 +230,4 @@ footer {
 body.home {
   height: 100vh;
   overflow: hidden;
-}
-
-/* Footer bleibt sichtbar auf der Home */
-body.home footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
