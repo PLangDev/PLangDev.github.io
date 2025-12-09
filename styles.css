@@ -79,7 +79,7 @@ body {
 /* ======================= */
 
 .hero {
-  height: 100vh; /* full viewport height */
+  height: 85vh; /* full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
